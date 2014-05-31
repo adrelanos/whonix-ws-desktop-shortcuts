@@ -1,0 +1,67 @@
+#!/bin/bash
+
+## This file is part of Whonix.
+## Copyright (C) 2012 - 2014 Patrick Schleizer <adrelanos@riseup.net>
+## See the file COPYING for copying conditions.
+
+if [ -f /usr/lib/pre.bsh ]; then
+   source /usr/lib/pre.bsh
+fi
+
+set -e
+
+true "
+####################################################################
+## INFO: Begin $DPKG_MAINTSCRIPT_NAME $DPKG_MAINTSCRIPT_PACKAGE...
+####################################################################
+"
+
+case "$1" in
+   configure)
+      true "INFO: Configuring $DPKG_MAINTSCRIPT_PACKAGE..."
+
+      sudo -u user mkdir --parents /home/user/Desktop/
+      ## Adding konsole icon on Desktop.
+      sudo -u user ln -s /usr/share/applications/kde4/konsole.desktop /home/user/Desktop/ || true
+      ## Adding kgpg icon on Desktop.
+      sudo -u user ln -s /usr/share/applications/kde4/kgpg.desktop /home/user/Desktop/ || true
+      ## Adding xchat icon on Desktop.
+      ## Symlink xchat starter to Desktop.
+      ## Override with true in case xchat gets removed from package selection.
+      sudo -u user ln -s /usr/share/applications/xchat.desktop /home/user/Desktop/ || true
+      ## symlink .desktop files to Desktop folder
+      sudo -u user ln -s /usr/share/applications/whonix-contribute.desktop /home/user/Desktop || true
+      #sudo -u user ln -s /usr/share/applications/whonix-mailinglist.desktop /home/user/Desktop || true
+      sudo -u user ln -s /usr/share/applications/anondist-torbrowser.desktop /home/user/Desktop || true
+      sudo -u user ln -s /usr/share/applications/anondist-torbrowser_update.desktop /home/user/Desktop || true
+      sudo -u user ln -s /usr/share/applications/whonix-documentation.desktop /home/user/Desktop || true
+      sudo -u user ln -s /usr/share/applications/whonix-forum.desktop /home/user/Desktop || true
+      #sudo -u user ln -s /usr/share/applications/whonix-tbrecommend.desktop /home/user/Desktop || true
+      #sudo -u user ln -s /usr/share/applications/whonix-donate.desktop /home/user/Desktop || true
+      sudo -u user ln -s /usr/share/applications/whonix-timesync.desktop /home/user/Desktop || true
+      sudo -u user ln -s /usr/share/applications/whonix-whonixcheck.desktop /home/user/Desktop || true
+      #sudo -u user ln -s /usr/share/applications/whonix-featureblog.desktop /home/user/Desktop || true
+      #sudo -u user ln -s /usr/share/applications/whonix-importantblog.desktop /home/user/Desktop || true
+
+      true "INFO: End configuring $DPKG_MAINTSCRIPT_PACKAGE."
+
+      ;;
+
+   *)
+      ;;
+esac
+
+true "INFO: debhelper beginning here."
+
+#DEBHELPER#
+
+true "INFO: Done with debhelper."
+
+true "
+####################################################################
+## INFO: $DPKG_MAINTSCRIPT_NAME script $DPKG_MAINTSCRIPT_PACKAGE no error detected.
+####################################################################
+"
+
+## Explicitly "exit 0", so eventually trapped errors can be ignored.
+exit 0
