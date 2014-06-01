@@ -14,7 +14,7 @@ Standards-Version: 3.9.4
 
 Package: whonix-ws-desktop-shortcuts
 Architecture: all
-Depends: anon-ws-base-files, ${misc:Depends}
+Depends: anon-ws-base-files, sudo, ${misc:Depends}
 Recommends: anon-icon-pack
 Description: Desktop Icons for Whonix-Workstation
  Creates shortcuts on the desktop, which are useful for Whonix-Workstation.
