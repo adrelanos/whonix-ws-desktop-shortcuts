@@ -38,8 +38,8 @@ case "$1" in
       sudo -u user ln -s /usr/share/applications/whonix-forum.desktop /home/user/Desktop || true
       #sudo -u user ln -s /usr/share/applications/whonix-tbrecommend.desktop /home/user/Desktop || true
       #sudo -u user ln -s /usr/share/applications/whonix-donate.desktop /home/user/Desktop || true
-      sudo -u user ln -s /usr/share/applications/whonix-timesync.desktop /home/user/Desktop || true
-      sudo -u user ln -s /usr/share/applications/whonix-whonixcheck.desktop /home/user/Desktop || true
+      sudo -u user ln -s /usr/share/applications/timesync.desktop /home/user/Desktop || true
+      sudo -u user ln -s /usr/share/applications/whonixcheck.desktop /home/user/Desktop || true
       #sudo -u user ln -s /usr/share/applications/whonix-featureblog.desktop /home/user/Desktop || true
       #sudo -u user ln -s /usr/share/applications/whonix-importantblog.desktop /home/user/Desktop || true
 
