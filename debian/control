@@ -19,3 +19,7 @@ Recommends: anon-icon-pack
 Description: Desktop Icons for Whonix-Workstation
  A metapackage, that creates shortcuts on the desktop, which are useful for
  Whonix-Workstation.
+ .
+ For better usability.
+ .
+ Safe to remove.
