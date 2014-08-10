@@ -16,21 +16,36 @@ true "
 ####################################################################
 "
 
+create_desktop_shortcuts() {
+   sudo -u user mkdir --parents /home/user/Desktop
+
+   local files_list file_name
+
+   files_list="
+      /usr/share/applications/kde4/konsole.desktop /home/user/Desktop/
+      /usr/share/applications/kde4/kgpg.desktop /home/user/Desktop/
+      /usr/share/applications/xchat.desktop /home/user/Desktop/
+      /usr/share/applications/whonix-contribute.desktop /home/user/Desktop
+      /usr/share/applications/anondist-torbrowser.desktop /home/user/Desktop
+      /usr/share/applications/anondist-torbrowser_update.desktop /home/user/Desktop
+      /usr/share/applications/whonix-documentation.desktop /home/user/Desktop
+      /usr/share/applications/whonix-forum.desktop /home/user/Desktop
+      /usr/share/applications/timesync.desktop /home/user/Desktop
+      /usr/share/applications/whonixcheck.desktop /home/user/Desktop
+   "
+
+   for file_name in $files_list; do
+      #if [ -f "$file_name" ]; then
+      sudo -u user ln -s "$file_name" /home/user/Desktop/ || true
+      #fi
+   done
+}
+
 case "$1" in
    configure)
       true "INFO: Configuring $DPKG_MAINTSCRIPT_PACKAGE..."
 
-      sudo -u user mkdir --parents /home/user/Desktop/
-      sudo -u user ln -s /usr/share/applications/kde4/konsole.desktop /home/user/Desktop/ || true
-      sudo -u user ln -s /usr/share/applications/kde4/kgpg.desktop /home/user/Desktop/ || true
-      sudo -u user ln -s /usr/share/applications/xchat.desktop /home/user/Desktop/ || true
-      sudo -u user ln -s /usr/share/applications/whonix-contribute.desktop /home/user/Desktop || true
-      sudo -u user ln -s /usr/share/applications/anondist-torbrowser.desktop /home/user/Desktop || true
-      sudo -u user ln -s /usr/share/applications/anondist-torbrowser_update.desktop /home/user/Desktop || true
-      sudo -u user ln -s /usr/share/applications/whonix-documentation.desktop /home/user/Desktop || true
-      sudo -u user ln -s /usr/share/applications/whonix-forum.desktop /home/user/Desktop || true
-      sudo -u user ln -s /usr/share/applications/timesync.desktop /home/user/Desktop || true
-      sudo -u user ln -s /usr/share/applications/whonixcheck.desktop /home/user/Desktop || true
+      create_desktop_shortcuts
 
       true "INFO: End configuring $DPKG_MAINTSCRIPT_PACKAGE."
 
