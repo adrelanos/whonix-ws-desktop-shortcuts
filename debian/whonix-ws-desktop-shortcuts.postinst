@@ -22,16 +22,16 @@ create_desktop_shortcuts() {
    local files_list file_name
 
    files_list="
-      /usr/share/applications/kde4/konsole.desktop /home/user/Desktop/
-      /usr/share/applications/kde4/kgpg.desktop /home/user/Desktop/
-      /usr/share/applications/xchat.desktop /home/user/Desktop/
-      /usr/share/applications/whonix-contribute.desktop /home/user/Desktop
-      /usr/share/applications/anondist-torbrowser.desktop /home/user/Desktop
-      /usr/share/applications/anondist-torbrowser_update.desktop /home/user/Desktop
-      /usr/share/applications/whonix-documentation.desktop /home/user/Desktop
-      /usr/share/applications/whonix-forum.desktop /home/user/Desktop
-      /usr/share/applications/timesync.desktop /home/user/Desktop
-      /usr/share/applications/whonixcheck.desktop /home/user/Desktop
+      /usr/share/applications/kde4/konsole.desktop
+      /usr/share/applications/kde4/kgpg.desktop
+      /usr/share/applications/xchat.desktop
+      /usr/share/applications/whonix-contribute.desktop
+      /usr/share/applications/anondist-torbrowser.desktop
+      /usr/share/applications/anondist-torbrowser_update.desktop
+      /usr/share/applications/whonix-documentation.desktop
+      /usr/share/applications/whonix-forum.desktop
+      /usr/share/applications/timesync.desktop
+      /usr/share/applications/whonixcheck.desktop
    "
 
    for file_name in $files_list; do
