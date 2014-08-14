@@ -19,7 +19,7 @@ true "
 create_desktop_shortcuts() {
    sudo -u user mkdir --parents /home/user/Desktop
 
-   local files_list file_name
+   local files_list file_name basename_file_name
 
    files_list="
       /usr/share/applications/kde4/konsole.desktop
