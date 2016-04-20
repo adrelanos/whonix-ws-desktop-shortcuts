@@ -30,7 +30,6 @@ create_desktop_shortcuts() {
       /usr/share/applications/anondist-torbrowser_update.desktop
       /usr/share/applications/whonix-documentation.desktop
       /usr/share/applications/whonix-forum.desktop
-      /usr/share/applications/timesync.desktop
       /usr/share/applications/whonixcheck.desktop
    "
 
