@@ -24,7 +24,7 @@ create_desktop_shortcuts() {
    files_list="
       /usr/share/applications/kde4/konsole.desktop
       /usr/share/applications/kde4/kgpg.desktop
-      /usr/share/applications/xchat.desktop
+      /usr/share/applications/hexchat.desktop
       /usr/share/applications/whonix-contribute.desktop
       /usr/share/applications/janondisttorbrowser.desktop
       /usr/share/applications/anondist-torbrowser_update.desktop
