@@ -1,3 +1,23 @@
+commit 47cb7a12688528ba05eccd85f5f1cec583a9abca
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Nov 21 17:44:21 2016 +0000
+
+    readme
+
+commit 65da81a93fac73caf10511f64a4c62484b55949d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Aug 30 21:17:14 2016 +0000
+
+    sudo --non-interactive
+    
+    https://phabricator.whonix.org/T549
+
+commit 7db1fc08170d62389ae85997d451c239502ca191
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat May 14 15:10:06 2016 +0000
+
+    bumped changelog version
+
 commit 619880048075903543953992bfe7580527c2abb0
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri May 13 19:28:52 2016 +0200
