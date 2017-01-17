@@ -1,3 +1,15 @@
+commit 4b7f7a51b9f0cfb4bc8a1aa8f59472c7371ad2b4
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jan 17 10:47:19 2017 +0100
+
+    disable, because broken in stretch
+
+commit 1321c1bfbd175ebb8624ff658f26cce0a682e51c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 15 15:40:09 2017 +0000
+
+    bumped changelog version
+
 commit f2b3ab5c9cb112c3d3bca2e0727f83b95fb98040
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Jan 15 08:35:54 2017 +0100
