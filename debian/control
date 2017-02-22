@@ -14,7 +14,7 @@ Standards-Version: 3.9.8
 
 Package: whonix-ws-desktop-shortcuts
 Architecture: all
-Depends: anon-ws-base-files, sudo, ${misc:Depends}
+Depends: anon-ws-base-files, ${misc:Depends}
 Recommends: anon-icon-pack
 Replaces: anon-ws-kde-startmenu
 Description: Desktop Icons and KDE Start Menu Favorites for Whonix-Workstation
