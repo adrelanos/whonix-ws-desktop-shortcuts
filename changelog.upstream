@@ -1,3 +1,27 @@
+commit 869002f9bdd84692d6484eacb174ca1058fc83ab
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Feb 22 00:58:07 2017 +0000
+
+    remove no longer required dependency sudo
+
+commit 54686089f06c1852f28b347fb6417fc4d9c6b25b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Feb 22 00:57:34 2017 +0000
+
+    merge anon-gw-kde-startmenu package
+
+commit 06353e763dd4fe5d2f573fc9ebe0e2434cc1127e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Feb 22 00:42:10 2017 +0000
+
+    fix for Debian stretch
+
+commit 7d9474433733ebd9ac56da03bb107442b5666c08
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Feb 17 14:19:26 2017 +0000
+
+    bumped changelog version
+
 commit 7c1b87089f990d14c0dbb4a61d2737d7f6120e6f
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Feb 10 15:47:56 2017 +0000
