@@ -1,7 +1,10 @@
-# Desktop Icons for Whonix-Workstation #
+# Desktop Icons and KDE Start Menu Favorites for Whonix-Workstation #
 
 A metapackage, that creates shortcuts on the desktop, which are useful for
 Whonix-Workstation.
+
+Configures KDE Kickoff favorites. (Takes effect for newly
+created user accounts. Not for existing user accounts.)
 
 For better usability.
 
