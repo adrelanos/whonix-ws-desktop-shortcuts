@@ -1,3 +1,31 @@
+commit 9c3d7e2caba341387637b693dbdca037e1e3c958
+Merge: 3149770 1292d77
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Oct 31 23:52:09 2018 -0400
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 1292d774920b4add2491bb7c2b596d5eefa76869
+Merge: 3149770 52668f6
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Oct 31 23:50:05 2018 -0400
+
+    Merge pull request #1 from Algernon-01/master
+    
+    Fixes for Xfce.
+
+commit 52668f6dc21fc6e82cf18fbb35f1719e9cdbcf45
+Author: Algernon-01 <33966997+Algernon-01@users.noreply.github.com>
+Date:   Wed Oct 31 18:02:17 2018 +0000
+
+    Fixes for Xfce.
+
+commit 3149770afaf05765d7953a5ca3ebce291900e9f5
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Aug 27 17:08:58 2018 +0000
+
+    bumped changelog version
+
 commit dfd0eedf2bdbbaa22741ffc6eb134c843ff29c99
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Aug 21 05:18:57 2018 +0800
